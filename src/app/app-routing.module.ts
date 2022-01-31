@@ -5,8 +5,11 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgifNgforComponent } from './ngif-ngfor/ngif-ngfor.component';
 
 const routes: Routes = [
+  {path: '', component: NgifNgforComponent},
+  {path: 'lazy', loadChildren: () => import('./modules/lazyloading/lazyloading.module').then(
+    m => m.LazyloadingModule
+  )},
   { path: 'teste1', component: DataBindingComponent },
-  { path: 'testengif', component: NgifNgforComponent },
   { path: 'testeapi', component: CrudComponent }
 ]
 

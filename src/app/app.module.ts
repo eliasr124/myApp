@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgifNgforComponent } from './ngif-ngfor/ngif-ngfor.component';
 import { CrudComponent } from './componentes/crud/crud.component';
+import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CrudComponent } from './componentes/crud/crud.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyloadingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
