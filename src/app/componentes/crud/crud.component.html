@@ -1,0 +1,4 @@
+<div *ngFor="let n of images">
+    <h1>{{ n.title}}</h1>
+    <img [attr.src]="n.url" />
+</div>
